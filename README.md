@@ -1,5 +1,9 @@
 # README
 
+Automates the search for the [Observed Antibody Space database (OAS)](https://opig.stats.ox.ac.uk/webapps/oas/). <br/>
+Download the pre-filtered database via the website, it is not necessary to unpack the files. <br/>
+You can then filter for specific HeavyChains (HC) according to various search criteria. <br/>
+
 **Usage:** ./humanab.py [-h] [--IGHV IGHV] [--IGHD IGHD] [--IGHJ IGHJ] [--CDRH3_length CDRH3_LENGTH] [--h3_motif H3_MOTIF] [--database DATABASE] [--full_results FULL_RESULTS] [--outputdir OUTPUTDIR] [--overwrite OVERWRITE] <br/>
 
 | **Option**     | **Explanation**                                                   | **Default** |
@@ -14,8 +18,6 @@
 | --full_results | Safe full results table. 1 for True, 0 for False                  | 1           |
 | --outputdir    | Output directory                                                  | "output/"   |
 | --overwrite    | 1 for True, 0 for False                                           | 0           |
-
-
 
 **Example:** ./humanab.py --IGHV "1-69" <br/> <br/>
 
