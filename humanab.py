@@ -134,7 +134,6 @@ def main(args):
     with Bar('Processing...', max = len([file for file in glob.glob(db+'*.csv.gz')])) as bar:
         for file in glob.glob(db+'*.csv.gz'):
             logging.debug(f"Reading file: {file}")  
-            #df_single = pd.read_csv(file, skiprows=1)
             df_single = pd.read_csv(file, skiprows=1, usecols = ['v_call','d_call','j_call','junction_aa_length','junction_aa'])
             dfsingle_sort = df_single.loc[
             df_single['v_call'].astype(str).str.contains(args.IGHV) & \
@@ -189,7 +188,7 @@ if __name__ == "__main__":
     argparser.add_argument("--h3_motif", type=str, default="", help='"." for one, ".*" for 0-many, like "YY.D.*G"')
     argparser.add_argument("--database", type=str, default="", help='Set database directory')   
     argparser.add_argument("--full_results", type=int, default="1", help='Safe full results table. 1 for True, 0 for False')
-    argparser.add_argument("--outputdir", type=str, default="output/", help='Output directory')   
+    argparser.add_argument("--outputdir", type=str, default="output", help='Output directory')   
     argparser.add_argument("--overwrite", type=int, default="0", help='1 for True, 0 for False')   
     args = argparser.parse_args() 
     main(args)
