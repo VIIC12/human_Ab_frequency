@@ -9,9 +9,9 @@ You can then filter for specific HeavyChains (HC) according to various search cr
 | **Option**     | **Explanation**                                                   | **Default** |
 |----------------|-------------------------------------------------------------------|-------------|
 | --help (-h)    | show this help message and exit                                   |             |
-| --IGHV         | "3-" or "3-22" or multiple by using | like: "3-20|3-22"           |             |
-| --IGHD         | "3-" or "3-22" or multiple by using | like: "3-20|3-22"           |             |
-| --IGHJ         | "5" or multiple by using | like: "4|5"                            |             |
+| --IGHV         | "3-" or "3-22" or multiple by using \| like: "3-20\|3-22"         |             |
+| --IGHD         | "3-" or "3-22" or multiple by using \| like: "3-20\|3-22"         |             |
+| --IGHJ         | "5" or multiple by using \| like: "4\|5"                          |             |
 | --CDRH3_length | Length of CDHR3 region as int (WITH C-X-W, so if necessary add 2) |             |
 | --h3_motif     | "." for one, ".*" for 0-many, like "YY.D.*G"                      |             |
 | --database     | Set database directory                                            |             |
