@@ -1,6 +1,6 @@
 # README
 
-![Explanation length between barcodes](https://docs.google.com/drawings/d/1nCKGDpvycjB_tGPplmZHw6j3p7lFwjcf8tTpQMegdTA/export/png)
+![Logo](https://docs.google.com/drawings/d/1nCKGDpvycjB_tGPplmZHw6j3p7lFwjcf8tTpQMegdTA/export/png)
 
 Automates the search for files from the [Observed Antibody Space database (OAS)](https://opig.stats.ox.ac.uk/webapps/oas/). <br/>
 Download the pre-filtered database (for like Species, B-Type, Chain, ...) via the website, and place them in an extra folder. It is not necessary to unpack the files. <br/>
